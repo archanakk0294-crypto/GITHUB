@@ -1,0 +1,23 @@
+# Service Configuration
+app_name: WebServer
+version: 1.0
+enabled: true
+
+# Server settings (nested mapping)
+server:
+  host: 127.0.0.1
+  port: 8080
+  timeout: 30s
+
+# List of users (sequence)
+users:
+  - admin
+  - developer
+  - guest
+
+# Example of a dictionary within a list
+databases:
+  - name: primary
+    type: postgresql
+  - name: cache
+    type: redis
